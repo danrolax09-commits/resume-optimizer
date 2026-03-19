@@ -7,22 +7,25 @@ export default function Home() {
 
   const plans = [
     {
-      name: 'Starter',
-      price: '$19',
-      priceId: 'price_starter',
-      features: ['Feature 1', 'Feature 2', 'Feature 3'],
+      name: 'Basic',
+      price: '$9',
+      priceId: 'price_basic',
+      description: 'Single resume optimization',
+      features: ['AI-powered optimization', 'ATS keyword analysis', 'Format review', 'One revision'],
     },
     {
       name: 'Professional',
-      price: '$49',
+      price: '$29',
       priceId: 'price_pro',
-      features: ['All Starter', 'Feature 4', 'Feature 5', 'Feature 6'],
+      description: 'Multiple resumes and interviews',
+      features: ['Unlimited resumes', 'Interview prep', 'Cover letter builder', 'Email templates', '10 revisions/month'],
     },
     {
-      name: 'Enterprise',
+      name: 'Elite',
       price: '$99',
       priceId: 'price_enterprise',
-      features: ['All Pro', 'Feature 7', 'Priority Support', 'Custom Integration'],
+      description: 'Complete career transformation',
+      features: ['Everything in Pro', 'LinkedIn optimization', '1-on-1 coaching calls', 'Job board access', 'Unlimited revisions', 'Lifetime updates'],
     },
   ];
 
@@ -50,7 +53,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-slate-900 to-slate-800">
       <header className="border-b border-slate-700">
         <div className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-white">Revenue Product</h1>
+          <h1 className="text-3xl font-bold text-white">📄 Resume Optimizer</h1>
           <nav className="flex gap-4">
             <a href="#features" className="text-slate-300 hover:text-white">Features</a>
             <a href="#pricing" className="text-slate-300 hover:text-white">Pricing</a>
@@ -59,8 +62,8 @@ export default function Home() {
       </header>
 
       <section className="max-w-7xl mx-auto px-4 py-20 text-center">
-        <h2 className="text-5xl font-bold text-white mb-6">Transform Your Workflow</h2>
-        <p className="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">Powerful, simple, and affordable.</p>
+        <h2 className="text-5xl font-bold text-white mb-6">Land Your Dream Job</h2>
+        <p className="text-xl text-slate-400 mb-8 max-w-2xl mx-auto">AI-powered resume optimization that passes ATS systems and impresses hiring managers. Get more interviews faster.</p>
         <button
           onClick={() => document.getElementById('pricing')?.scrollIntoView()}
           className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold"

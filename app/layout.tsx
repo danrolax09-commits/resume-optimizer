@@ -3,14 +3,10 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'resume-optimizer',
-  description: 'Revenue-generating SaaS product',
+  description: 'AI-powered resume and career optimization',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>{children}</body>
